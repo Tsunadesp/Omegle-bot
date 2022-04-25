@@ -1,0 +1,16 @@
+// 1 : go to https://www.omegle.com 
+// 2 : click on text chat
+// 3 : inspect element
+// 4 : put the script in console 
+
+function executeOmegle()
+{
+  let btn = document.querySelector('.disconnectbtn')
+  let messageBox = document.querySelector('.chatmsg')
+  let sendBtn = document.querySelector('.sendbtn')
+  btn.click()
+  messageBox.innerHTML="TEXT HERE"
+  sendBtn.click()
+}
+
+setInterval(executeOmegle,4000)
